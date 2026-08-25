@@ -1,0 +1,102 @@
+.deadlines-page {
+  padding: 44px 24px 60px;
+}
+
+.deadline-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.deadline-form input {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.deadline-form input[type='text'],
+.deadline-form input:first-child {
+  flex: 1;
+  min-width: 200px;
+}
+
+.deadline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.deadline-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+
+.deadline-row.urgent-red {
+  border-left-color: var(--coral);
+}
+.deadline-row.urgent-orange {
+  border-left-color: var(--marigold);
+}
+.deadline-row.urgent-green {
+  border-left-color: var(--mint);
+}
+
+.deadline-marker {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.urgent-red .deadline-marker {
+  background: var(--coral);
+}
+.urgent-orange .deadline-marker {
+  background: var(--marigold);
+}
+.urgent-green .deadline-marker {
+  background: var(--mint);
+}
+
+.deadline-info {
+  flex: 1;
+}
+
+.deadline-info h4 {
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+}
+
+.deadline-source {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+.deadline-days {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--text-soft);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+  color: var(--coral);
+}
