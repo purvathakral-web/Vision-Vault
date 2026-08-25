@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Vision Vault</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="wrap">
+      <a href="index.html" class="logo">Vision<span>Vault</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="hackathons.html">Hackathons</a>
+        <a href="internships.html">Internships</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="roadmap.html">Roadmap</a>
+      </nav>
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="profile.html" class="btn btn-secondary btn-small">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap dashboard-main">
+
+    <div class="dash-header">
+      <div>
+        <h1 id="greeting">Welcome back 👋</h1>
+        <p class="section-sub" id="subGreeting">Here's where things stand today.</p>
+      </div>
+    </div>
+
+    <!-- ===== QUICK ACTIONS ===== -->
+    <section class="quick-actions">
+      <a href="internships.html" class="btn btn-primary btn-small">+ Add Internship</a>
+      <a href="deadlines.html" class="btn btn-secondary btn-small">+ Add Deadline</a>
+      <a href="hackathons.html" class="btn btn-secondary btn-small">Browse Hackathons</a>
+      <a href="roadmap.html" class="btn btn-secondary btn-small">View Roadmap</a>
+    </section>
+
+    <!-- ===== OVERVIEW CARDS ===== -->
+    <section class="overview-grid">
+
+      <!-- Upcoming deadlines -->
+      <div class="pin-card overview-card">
+        <h3>Upcoming Deadlines</h3>
+        <ul id="deadlinesList" class="mini-list"></ul>
+        <a href="deadlines.html" class="card-link">See all deadlines →</a>
+      </div>
+
+      <!-- Recommended hackathon -->
+      <div class="pin-card overview-card" id="recommendedHackathon">
+        <h3>Recommended Hackathon</h3>
+        <!-- filled by dashboard.js -->
+      </div>
+
+      <!-- Internship pipeline -->
+      <div class="pin-card overview-card">
+        <h3>Internship Pipeline</h3>
+        <ul id="pipelineList" class="mini-list"></ul>
+        <a href="internships.html" class="card-link">Open tracker →</a>
+      </div>
+
+      <!-- Skill progress -->
+      <div class="pin-card overview-card" id="skillProgressCard">
+        <h3>Skill Progress</h3>
+        <!-- filled by dashboard.js -->
+      </div>
+
+    </section>
+
+    <!-- ===== RECENT ACTIVITY ===== -->
+    <section class="activity-section">
+      <h2 class="section-title">Recent Activity</h2>
+      <ul id="activityList" class="activity-list"></ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    Built by students, for students. Vision Vault © 2026
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

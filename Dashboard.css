@@ -1,0 +1,77 @@
+.dashboard {
+  padding: 44px 24px 60px;
+}
+
+.overview-grid {
+  margin-bottom: 26px;
+}
+
+.overview-card {
+  display: block;
+}
+
+.overview-card .badge {
+  margin-bottom: 12px;
+}
+
+.overview-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.overview-card p {
+  font-size: 0.88rem;
+}
+
+.dashboard-lower h3 {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--mint);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.activity-text {
+  color: var(--text);
+  font-size: 0.92rem;
+  margin-bottom: 2px;
+}
+
+.activity-time {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+@media (max-width: 700px) {
+  .dashboard {
+    padding: 30px 16px 40px;
+  }
+}
+.overview-card { border: 0; text-align: left; color: inherit; font: inherit; cursor: pointer; }

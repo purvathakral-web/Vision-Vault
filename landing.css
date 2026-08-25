@@ -1,0 +1,123 @@
+/* ============================================
+   LANDING PAGE STYLES
+   ============================================ */
+
+/* --- Hero --- */
+.hero { padding: 70px 0 40px; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-weight: 600;
+  color: var(--violet);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.hero-copy h1 {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+}
+.hero-copy h1 em {
+  font-style: normal;
+  color: var(--coral);
+}
+
+.hero-sub {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin-bottom: 26px;
+}
+
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* --- Hero pinboard visual --- */
+.hero-board {
+  position: relative;
+  height: 340px;
+}
+
+.board-card {
+  position: absolute;
+  width: 220px;
+  transition: transform 0.2s ease;
+}
+.board-card:hover { transform: rotate(0deg) scale(1.03); }
+
+.card-1 { top: 0;    left: 30px;  transform: rotate(-4deg); }
+.card-2 { top: 110px; left: 170px; transform: rotate(3deg); }
+.card-3 { top: 230px; left: 10px;  transform: rotate(-2deg); }
+
+.board-card-title { font-weight: 600; margin-top: 10px; }
+.board-card-sub { color: var(--ink-soft); font-size: 0.85rem; margin-top: 2px; }
+
+/* --- How it works --- */
+.how-it-works { padding: 60px 0; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.step-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--mint);
+}
+.step h3 { margin: 8px 0 6px; font-size: 1.15rem; }
+.step p { color: var(--ink-soft); font-size: 0.95rem; }
+
+/* --- Feature cards --- */
+.features { padding: 60px 0; }
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-card { display: block; }
+.feature-icon { font-size: 1.6rem; }
+.feature-card h3 { margin: 10px 0 6px; font-size: 1.1rem; }
+.feature-card p { color: var(--ink-soft); font-size: 0.9rem; }
+
+/* --- Team finder teaser --- */
+.team-teaser {
+  background: var(--violet);
+  color: #fff;
+  padding: 50px 0;
+  margin: 40px 0;
+}
+.team-teaser-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.team-teaser h2 { color: #fff; font-size: 1.5rem; margin-bottom: 6px; }
+.team-teaser p { color: rgba(255,255,255,0.8); max-width: 480px; }
+.team-teaser .btn-secondary { color: #fff; border-color: #fff; }
+
+/* --- Final CTA --- */
+.final-cta {
+  text-align: center;
+  padding: 50px 0 80px;
+}
+.final-cta h2 { font-size: 1.7rem; margin-bottom: 22px; }
+
+/* --- Responsive: mobile-first breakpoints --- */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-board { display: none; } /* keep mobile hero simple */
+  .steps-grid, .features-grid { grid-template-columns: 1fr; }
+  .hero-copy h1 { font-size: 2.1rem; }
+}
