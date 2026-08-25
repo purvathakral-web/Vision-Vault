@@ -1,0 +1,2 @@
+# Vision Vault
+Vision Vault is a frontend-only career dashboard built with React (Vite) and plain CSS. It helps engineering/CS students organize their career prep — tracking upcoming hackathons, internship opportunities, important deadlines, and personal skill roadmaps in a clean, single-page app. No backend or database is used; all data currently lives in a local dummy data file (and localStorage where noted), making it lightweight and easy to run locally
